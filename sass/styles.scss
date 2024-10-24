@@ -257,8 +257,9 @@ Hero
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-position: 70% 50%;
+  background-position: 50% 50%;
   position: relative; 
+
 
   /*.rsvp-btn { // AM: button superposed on the background
     position: absolute;
@@ -292,6 +293,11 @@ Hero
   @media screen and (max-width: 480px) {
     img {
       bottom: 100%; // AM: hide the names for mobile (a bit hacky...)
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      min-height: 250px;
+
     }
   }
 }
@@ -340,7 +346,7 @@ header {
       display: inline;
 
       a {
-        color: #F2055C; // $txt-light; // AM: menu text
+        color: #e46484; // $txt-light; // AM: menu text
         padding-right: 25px;
 
         &:hover {
