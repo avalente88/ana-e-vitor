@@ -254,7 +254,7 @@
 
 @media screen and (max-width: 640px) {
     .hero .hero-content {
-        padding-top: 100%;
+        padding-top: 75%;
     }
 
     #eng-pics .img-wrap i {
@@ -293,7 +293,11 @@
 
 @media screen and (max-width: 480px) {
     .hero .hero-content {
-        padding-top: 110%;
+        padding-top: 75%;
+    }
+
+    .hero{
+        min-height: 600px;
     }
     
     .hero .hero-content img {
@@ -357,7 +361,7 @@
 
 @media screen and (max-width: 320px) {
     .hero .hero-content {
-        padding-top: 130%;
+        padding-top: 75%;
     }
 
     .rsvp {

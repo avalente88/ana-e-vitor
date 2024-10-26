@@ -23,6 +23,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="iniziali.png">
     <link rel="manifest" href="manifest.json">
     <link rel="mask-icon" href="iniziali.png" color="#5bbad5">
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 
     <script>
         // load css files from CDN if local node_modules fail
@@ -40,6 +41,8 @@
             document.getElementsByTagName('head')[0].appendChild(link);
         }
 
+        
+
         // load js files from CDN if local node_modules fail
         function loadJsFromCDN(js) {
             if (js === 'waypoints.js') {
@@ -48,8 +51,8 @@
                 document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"><\/script>');
             }
         }
-    </script>
 
+    </script>
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/jquery.fancybox.css">
@@ -71,10 +74,11 @@
                     <nav> 
                         <ul class="primary-nav">
                             <li><a href="#invitation">Início</a></li>
-                            <li><a href="#intro">Casamento</a></li>
-                            <li><a href="#foto">Informações</a></li>
+                            <li><a href="#intro">Cerimónia</a></li>
                             
-                            <li><a href="#map">Como chegar</a></li>
+                            <li><a href="#party">Festa</a></li>
+
+                            <li><a href="#foto">Informações</a></li>
                             <li><a href="#rsvp">RSVP</a></li>
                             <li><a href="#foto-album">Album</a></li>
                         </ul>
@@ -127,21 +131,36 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h3 class="header">CASAMENTO</h3>
+                <h3 class="header">Cerimónia Religiosa</h3>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-3 hidden-sm hidden-xs"><img src="img/IMG_3239.jpg" class="wp1"></div>
+            <div class="col-md-3 hidden-sm hidden-xs"><img src="img/IMG_7365.jpg" class="wp1"></div>
             <div class="col-md-6">
                 <p>O nosso casamento vai ter início com a cerimónia religiosa, às <b>14:30</b>, na <b>Basílica de Santa Quitéria de Meca</b>, em Alenquer.</p>
-                <p>Segue-se a festa de casamento na <b>Quinta Nova do Hespanhol</b>, na Carvoeira, onde devemos chegar pelas 16:30.</p>
-                <p>De Lisboa à basílica demoras cerca de 45 minutos. Chamamos-te a atenção para a pontualidade. Só esperamos pela noiva.</p>
+                <p>Vamos tentar ser pontuais.</p>
+                <p>A basílica de Santa Quitéria de Meca tem um estacionamento na rua da Alameda, pelo gostaríamos que tentasses estacionar aí, deixando o átrio livre para fotografias.</p>
+                <p>Dentro da igreja, podes tirar fotografias mas tenta ter atenção à posição do fotógrafo de forma a não ficares entre o fotógrafo e os noivos.</p>
+                <p>Na saída dos noivos, gostávamos também de te pedir para não utilizares produtos de plástico como confetis ou flores falsas, nem produtos alimentares, como arroz.</p>
+
             </div>
-            <div class="col-md-3 hidden-sm hidden-xs"><img src="img/IMG_7365.jpg" class="wp2"></div>
+            <div class="col-md-3 hidden-sm hidden-xs">
+                <div class="wp9" style="max-width:100%;list-style:none; transition: none;overflow:hidden;height:350px;margin:auto">
+                    <div id="display-google-map" style="height:100%; width:100%;max-width:100%;">
+                        <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=basílica+de+santa+quitéria+de+meca&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                    </div>                
+                </div>
+            </div>
         </div>
         <div class="row">
-            <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><img src="img/IMG_3239.jpg" class="wp8"></div>
-            <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><img src="img/IMG_7365.jpg" class="wp9"></div>
+            <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><img src="img/IMG_7365.jpg" class="wp8"></div>
+            <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg">
+                <div class="wp9" style="max-width:100%;list-style:none; transition: none;overflow:hidden;width:760px;height:500px;margin:auto">
+                    <div id="display-google-map" style="height:100%; width:100%;max-width:100%;">
+                        <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=basílica+de+santa+quitéria+de+meca&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                    </div>                
+                </div>
+            </div>
         </div>
 
             
@@ -150,61 +169,64 @@
     </div>
 </section>
 
+<section id="party" class="section-padding">
 
-<section id="info" class="section-padding">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3 class="header">Jantar e Festa</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 hidden-sm hidden-xs">
+
+                <div class="wp1" style="max-width:100%;list-style:none; transition: none;overflow:hidden;width:500px;height:350px;"><div id="embedded-map-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=quinta+nova+do+hespanhol&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="embed-ded-maphtml" href="https://www.bootstrapskins.com/themes" id="make-map-data">premium bootstrap themes</a><style>#embedded-map-display img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}</style></div>
+
+            </div>
+            <div class="col-md-6">
+                <p>Após a cerimónia religiosa, convidamos-te a seguir para a <b>Quinta Nova do Hespanhol</b>, na Carvoeira, num trajeto que deverá demorar 20 minutos.</p>               
+                <img style="display: block; margin: auto; width:40%; height:40%" src="img/crono.png" >
+                <p>Não temos hora para o fim da festa, portanto contamos contigo para que dure o mais possível.</p>
+            </div>
+            <div class="col-md-3 hidden-sm hidden-xs">
+                <img src="img/IMG_3239.jpg" class="wp9">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg">
+
+                <div class="wp8" style="max-width:100%;list-style:none; transition: none;overflow:hidden;width:760px;height:350px;"><div id="embedded-map-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=quinta+nova+do+hespanhol&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="embed-ded-maphtml" href="https://www.bootstrapskins.com/themes" id="make-map-data">premium bootstrap themes</a><style>#embedded-map-display img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}</style></div>
+            </div>
+            <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg">
+                <img src="img/IMG_3239.jpg" class="wp9">
+            </div>
+        </div>
+
+</section>
+
+<section id="info" class="section-padding grayed">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
                 <h3>INFORMAÇÕES</h3>
-                <h4>Agenda do Dia</h4>
-                <div class="row">
-                    <div class="col-md-3">
-                    </div>
-                    <div class="col-md-6">
-                        <p>Estamos a planear um dia com cerimónia religiosa, cocktail, jantar e festa.</p>
-
-                        <img  src="img/crono.png" >
-                    </div>
-                    <div class="col-md-3">
-                    </div>
-                </div>
-                <br/><br/>
-                <h4>Igreja</h4>
-                <p>A basílica de Santa Quitéria de Meca tem um estacionamento na rua da Alameda, pelo que te pedimos que não deixes o carro no largo imediatamente em frente à igreja para não poluir as fotografias.</p>
-                <p>Na saída dos noivos, gostávamos de te pedir para não serem usados produtos de plástico como confetis ou flores falsas visto que têm um grande impacto ambiental.</p>
-                <p>Iremos também fazer uma doação de arroz ao banco alimentar contra a fome e como tal, pelo que te pedimos para que não nos atires com produtos alimentares como arroz.</p>
+                
+                
                 <h4>Alojamento</h4>
                 <p>Se quiseres ficar a dormir mais perto da Quinta Nova do Hespanhol, aconselhamos-te a procurar alojamento num AirBnb perto da Carvoeira ou em algum hotel em Torres Vedras porque estamos a planear que o casamento termine tarde.</p>
                 <p>Temos um acordo com o Hotel Dolce Campo Real de te dá 15% de desconto em regime de dormida e pequeno-almoço.</p>
-                <p>Para isso, basta reservares com o nosso link <a href="https://be-p2.synxis.com/?adult=1&arrive=2025-04-10&chain=5136&child=0&currency=EUR&depart=2025-04-15&hotel=81431&level=hotel&locale=pt-PT&productcurrency=EUR&promo=1000086956&rooms=1">Alojamento Casamento Ana & Vitor</a>.</p>
-               
+                <p>Para isso, basta reservares com o nosso link <a href="https://be-p2.synxis.com/?adult=1&arrive=2025-04-10&chain=5136&child=0&currency=EUR&depart=2025-04-15&hotel=81431&level=hotel&locale=pt-PT&productcurrency=EUR&promo=1000086956&rooms=1">Alojamento Casamento Ana & Vitor</a>.</p>                
+                
+                <h4>Lista de Casamento</h4>
+                <p>Não nos estamos a casar para receber presentes porque temos a sorte de não precisar de nada. O que queremos mesmo é que desfrutes deste dia connosco.</p>
+                <p>Se fizeres questão de nos oferecer alguma coisa, podes ajudar na nossa lua de mel contribuindo por MBWay, Revolut ou Transferência Bancária.</p>
+
             </div>
         </div>
 
     </div>
 </section>
 
-
-
-<section id="map" class="section-padding text-center grayed">
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                                <h3>COMO CHEGAR?</h3>
-                <p>Dependendo de onde vives, pode ser útil ires pela A8 ou pela A1.</p>
-                <p>Caso vás pela A8, aconselhamos-te a que vás até Torres Vedras antes de virar pois a estrada é melhor.</p>
-                
-                <div style="max-width:100%;list-style:none; transition: none;overflow:hidden;width:760px;height:500px;">
-                    <div id="display-google-map" style="height:100%; width:100%;max-width:100%;">
-                        <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=basílica+de+santa+quitéria+de+meca&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
-                    </div>                
-                </div>
-
-            </div>
-        </div>
-
-</section>
 
 <section class="rsvp" id="rsvp">
     
@@ -220,22 +242,22 @@
             </div>
             <div class="col-md-12 ">
 
-                <form>
+                <form id="confirmationForm" method="post" >
                     <div class="col-md-12">
                         <h5>Os teus dados</h5>
                         <p>Vamos precisar dos alguns dados teus para preparar a nossa festa. Não os vamos partilhar com ninguém.</p>
                     <div class="col-md-12">
                         <div class="form-group">
                       <label for="name">Nome</label>
-                      <input type="text" class="form-control" id="name" placeholder="Nome">
+                      <input type="text" name="Nome" class="form-control" id="name" placeholder="Nome">
                     </div>
                     <div class="form-group">
                       <label for="email">E-mail</label>
-                      <input type="email" class="form-control" id="email" placeholder="E-mail">
+                      <input type="email" name="Email" class="form-control" id="email" placeholder="E-mail">
                     </div>
                     <div class="form-group">
                         <label for="plusone">Nome do(a) acompanhante</label>
-                        <input type="text" class="form-control" id="plusone" placeholder="Nome do(a) acompanhante">
+                        <input type="text" name="Acompanhante" class="form-control" id="plusone" placeholder="Nome do(a) acompanhante">
                     </div>
                 </div></div>
 
@@ -245,32 +267,32 @@
                     
                         <div class="form-group col-md-6">
                             <label for="child1">Nome</label>
-                            <input type="text" class="form-control" id="child1" placeholder="Nome da 1ª criança">
+                            <input type="text" name="NomeCrianca1" class="form-control" id="child1" placeholder="Nome da 1ª criança">
                            
                         </div>
                         <div class="form-group col-md-6">
                             <label for="agechild1">Idade</label>
-                            <input type="text" class="form-control" id="agechild1" placeholder="Idade da 1ª criança">
+                            <input type="number" name="IdadeCrianca1" class="form-control" id="agechild1" placeholder="Idade da 1ª criança">
                         </div>
 
                         <div class="form-group col-md-6">
                             <label for="child1">Nome</label>
-                            <input type="text" class="form-control" id="child2" placeholder="Nome da 2ª criança">
+                            <input type="text" name="NomeCrianca2" class="form-control" id="child2" placeholder="Nome da 2ª criança">
                            
                         </div>
                         <div class="form-group col-md-6">
                             <label for="agechild2">Idade</label>
-                            <input type="text" class="form-control" id="agechild2" placeholder="Idade da 2ª criança">
+                            <input type="number" name="IdadeCrianca2" class="form-control" id="agechild2" placeholder="Idade da 2ª criança">
                         </div>
 
                         <div class="form-group col-md-6">
                             <label for="child3">Nome</label>
-                            <input type="text" class="form-control" id="child3" placeholder="Nome da 3ª criança">
+                            <input type="text" name="NomeCrianca3" class="form-control" id="child3" placeholder="Nome da 3ª criança">
                            
                         </div>
                         <div class="form-group col-md-6">
                             <label for="agechild3">Idade</label>
-                            <input type="text" class="form-control" id="agechild3" placeholder="Idade da 3ª criança">
+                            <input type="number" name="IdadeCrianca3" class="form-control" id="agechild3" placeholder="Idade da 3ª criança">
                         </div>
                     </div>
                     <div class="col-md-12">
@@ -279,21 +301,21 @@
                         <div class="col-md-12">
                         <div class="form-group">
                             <label for="alergy">Tens alergias ou intolerâncias alimentares que queiras mencionar?</label>
-                            <input type="text" class="form-control" id="alergy" placeholder="Alergias e intolerâncias">
+                            <input type="text" name="Alergias" class="form-control" id="alergy" placeholder="Alergias e intolerâncias">
                           </div>
                           <div class="form-group">
                             <label for="music">Que músicas é que te vão arrancar da cadeira diretamente para a pista?</label>
-                            <input type="text" class="form-control" id="music" placeholder="Música">
+                            <input type="text" name="Musica" class="form-control" id="music" placeholder="Música">
                           </div>
                           <div class="form-group">
                             <label for="comment">Outros comentários</label>
-                            <input type="text" class="form-control" id="comment" placeholder="Comentários ou observações">
+                            <input type="text" name="Info" class="form-control" id="comment" placeholder="Comentários ou observações">
                           </div>
                           </div>
                     </div>
                 
                     <br>
-                    <button type="submit" class="btn" style="width: 35%">Submeter</button>
+                    <button id="btnSubmit" type="submit" class="btn" style="width: 50%; display: block; margin: auto;">Submeter</button>
                   </form>
 
             </div>
@@ -427,6 +449,19 @@
     </div>-->
 </section>
 
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <div class="container">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Obrigada pela tua confirmação. Recebemos o teu formulário.</p>
+    </div>
+</div>
+  </div>
+  
 <footer>
     <div class="container">
         <div class="row">
@@ -437,6 +472,43 @@
         </div>
     </div>
 </footer>
+<script>
+    var form = document.getElementById('confirmationForm');
+    var scriptURL = "https://script.google.com/macros/s/AKfycbwxw83466Jc4UEleCx3Oe6ZflvJgVd2R4A4lOQsFTDI1syDZnhCDTHVyt7mzSK3VbEWEg/exec";
+    var modal = document.getElementById('myModal');
+
+
+    form.addEventListener('submit', e => {
+    e.preventDefault()
+    
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response =>   modal.style.display = "block")
+    .catch(error => alert("Houve um erro a carregar o teu formulário! Liga-nos, por favor."))
+    });
+
+// Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+ 
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
+
+var btnSubmit = document.getElementById("btnSubmit");
+
+
+
+</script>
 <script src="js/vendor/jquery-1.11.2.min.js" onerror="loadJsFromCDN('jquery.js')"></script>
 <script src="node_modules/waypoints/lib/jquery.waypoints.min.js" onerror="loadJsFromCDN('waypoints.js')"></script>
 <script src="js/jquery.fancybox.pack.js"></script>
@@ -447,21 +519,6 @@
 <script src="js/scripts.min.js"></script>
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlPw3GQYI3faa_9mRE6plWuM7xNEmrwH0&callback=initMap"></script>
-<!-- Google Analytics -->
-<script>
-    (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function () {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-    ga('create', 'UA-46465113-4', 'auto');
-    ga('send', 'pageview');
-</script>
+
 </body>
 </html>
