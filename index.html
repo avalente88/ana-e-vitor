@@ -507,34 +507,28 @@
 					<div class="row">
 						<div class="col-md-6 col-md-push-6 animate-box">
 							<h3>Preenche o formulário</h3>
-
-
-
-
-
-
 							<form id="confirmationForm" method="post" >
 								<div class="row form-group">
 									<div class="col-md-6">
 										<label for="Nome">Nome</label>
-									  	<input type="text" name="Nome" class="form-control" id="Nome" placeholder="Nome">
+									  	<input type="text" required name="Nome" class="form-control formulario" id="Nome" placeholder="Nome">
 									</div>
 									<div class="col-md-6">
 										<label for="Acompanhante">Nome do acompanhante</label>
-										<input type="text" name="Acompanhante" class="form-control" id="Acompanhante" placeholder="Nome do acompanhante">
+										<input type="text" name="Acompanhante" class="form-control formulario" id="Acompanhante" placeholder="Nome do acompanhante">
 									</div>
 								</div>
 								<div class="row form-group">
 									<div class="col-md-12">
 										<label for="Criancas">Crianças (se levares crianças, indica aqui os nomes e idades)</label>
-										<textarea type="text" name="Criancas" cols="30" rows="3" class="form-control" id="Criancas" placeholder="Crianças"></textarea>
+										<textarea type="text" name="Criancas" cols="30" rows="3" class="form-control formulario" id="Criancas" placeholder="Crianças"></textarea>
 									</div>
 								</div>
 		
 								<div class="row form-group">
 									<div class="col-md-12">
 										<label for="Telefone">Telefone</label>
-									  <input type="text" name="Telefone" class="form-control" id="Telefone" placeholder="Telefone">
+									  <input type="number" required name="Telefone" class="form-control formulario" id="Telefone" placeholder="Telefone">
 									</div>
 								</div>
 <!--
@@ -572,14 +566,14 @@
 								<div class="row form-group">
 									<div class="col-md-12">
 										<label for="Alergias">Tens alergias ou intolerâncias?</label>
-										<input type="text" name="Alergias" class="form-control" id="Alergias" class="form-control" placeholder="Alergias e intolerâncias">
+										<input type="text" name="Alergias" class="form-control formulario" id="Alergias" class="form-control" placeholder="Alergias e intolerâncias">
 									</div>
 								</div>
 		
 								<div class="row form-group">
 									<div class="col-md-12">
 										<label for="Musica">Que músicas gostarias de ouvir na pista?</label>
-										<input type="text" name="Musica" class="form-control" id="Musica" class="form-control" placeholder="Música">
+										<input type="text" name="Musica" class="form-control formulario" id="Musica" class="form-control" placeholder="Música">
 									</div>
 								</div>
 		
@@ -587,7 +581,7 @@
 								<div class="row form-group">
 									<div class="col-md-12">
 										<label for="Comentarios">Comentários </label>
-										<textarea type="text" name="Comentarios" cols="30" rows="3" class="form-control" id="Comentarios" placeholder="Comentários"></textarea>
+										<textarea type="text" name="Comentarios" cols="30" rows="3" class="form-control formulario" id="Comentarios" placeholder="Comentários"></textarea>
 									</div>
 								</div>
 								<div class="form-group">
@@ -640,15 +634,15 @@
 		</div>
 	</div>
 	<!-- The Modal -->
-<div id="myModal" class="modal">
-    <div class="container">
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <p>Obrigada pela tua confirmação.</p>
-    </div>
-</div>
-  </div>
+	<div id="myModal" class="modal" style="display:none">
+		<div class="container">
+			<!-- Modal content -->
+			<div class="modal-content" style="width: 50%;">
+			<span class="close">&times;</span>
+			<p style="text-align: center;">Obrigado pela tua confirmação.</p>
+			</div>
+		</div>
+	</div>
 
 	<footer id="fh5co-footer" role="contentinfo">
 		<div class="container">
@@ -692,7 +686,7 @@
 	<script src="js/main.js"></script>
 
 	<script>
-    var d = new Date(new Date().getTime() + 485 * 120 * 120 * 2000);
+    var d = new Date("2025-04-12 14:30:00");
 
     // default example
     simplyCountdown('.simply-countdown-one', {
@@ -714,34 +708,30 @@
     var scriptURL = "https://script.google.com/macros/s/AKfycbwxw83466Jc4UEleCx3Oe6ZflvJgVd2R4A4lOQsFTDI1syDZnhCDTHVyt7mzSK3VbEWEg/exec";
     var modal = document.getElementById('myModal');
 
-
     form.addEventListener('submit', e => {
-    e.preventDefault()
-    
+	$(".fh5co-loader").fadeIn("slow");
+    e.preventDefault();
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response =>   modal.style.display = "block")
+    .then(response =>   AfterFormSubmit())
     .catch(error => alert("Houve um erro a carregar o teu formulário! Liga-nos, por favor."))
     });
 
-// Get the <span> element that closes the modal
+	// Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
- 
-}
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() {modal.style.display = "none";}
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+	if (event.target == modal) {
+		modal.style.display = "none";
+	}
+	}
 
 
 
-var btnSubmit = document.getElementById("btnSubmit");
+
 
 
 

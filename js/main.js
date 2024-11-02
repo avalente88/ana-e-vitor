@@ -230,3 +230,12 @@
 
 
 }());
+
+function AfterFormSubmit(){
+    var modal = document.getElementById('myModal');
+
+	modal.style.display = "block";
+
+	$(".fh5co-loader").fadeOut("slow");
+	document.querySelectorAll(".formulario").forEach(x => x.value = '');
+}
