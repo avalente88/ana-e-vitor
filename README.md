@@ -1,27 +1,25 @@
-# Wedding Website
-A beautiful, feature rich, device friendly wedding website.  
-See [wedding website](https://amuolo.github.io/website.wedding/)
+Thanks for downloading this theme!
 
-# Highlights
-1. Slick and fully __responsive__ design
-2. __RSVP feature__ which directly uploads data to a Google sheet
-3. __Receive email alerts__ when someone RSVPs
-4. __Add to Calendar__ feature which supports four different calendars
-5. A nice __Youtube video__ showing your venue
-6. __Google Map__ showing your venue's location
-7. Start and run the website __completely free__. No hosting, backend server, or database required as you can use
-   [GitHub Pages](https://pages.github.com/) to host and Google sheets (with the help of Google scripts) to store RSVP data
+## Other Useful Links
 
-# Getting Started
-1. `$ git clone https://github.com/amuolo/website.wedding` - clone this project to your computer
-2. `$ cd wedding-website` - go inside the project directory
-3. `$ npm install` - install dependencies
-4. `$ gulp` - compile sass to css, minify js, etc.
-5. That's it, open `index.html` file on your browser by just double-clicking on it.
+**ThemeWagon** is a great source for downloading free HTML templates built with the latest technology.
 
-# Documentation
-Check out this [blog post describing all the features of this wedding website](https://blog.rampatra.com/wedding-website) 
-and how to customize each of them according to your needs.
+To download free templates, follow this link: https://themewagon.com/theme_tag/free/
 
+Besides that, you can buy our premium templates for making your web development experience unforgettable.
+
+Visit the store from here: https://themewagon.com/theme-categories/premium-templates/
+
+Alternatively, here's our top most trending and selling items:
+
+* [**Sparrow**](https://themewagon.com/themes/sparrow/) - A multipurpose template made with Bootstrap 4.1 and world's finest animation.
+* [**Posh**](https://themewagon.com/themes/posh-html5-bootstrap-4-template/) - Bootstrap 4 template with a myriad number of ready-to-deploy sections. 
+* [**Elixir**](https://themewagon.com/themes/elixir-elegant-html5-bootstrap-template-consultancy-agency-website/) - Bootstrap 4 agency template. Best for smooth animated scrolling. 
+* [**Freya**](https://themewagon.com/themes/bootstrap-4-premium-interior-design-template-freya/) - Interior design template made with Bootstrap 4. 
+* [**Reign Pro**](https://themewagon.com/themes/reign-pro-premium-corporate-agency-html5-template/) - A corporate template with a visually unique design scheme. 
+* [**Boots4**](https://themewagon.com/themes/first-ever-bootstrap-4-template/) - One of the first Bootstrap 4 templates ever made on earth. 
+* [**Hideaway**](https://themewagon.com/themes/hideaway/) - A template for resorts. Built with Bootstrap 4. 
+* [**Baikal**](https://themewagon.com/themes/bootstrap-4-startup-small-business-website-template/) - A smart Bootstrap template for start-up. 
+* [**Mega Discount**](https://themewagon.com/themes/mega-discount-bundle/) - A bundle of 26 HTML5 templates; best value for your money. 
 
 

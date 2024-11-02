@@ -1,481 +1,713 @@
-<!doctype html>
-<!--[if lt IE 7]>
-<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>
-<html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>
-<html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="en"> <!--<![endif]-->
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <title>A Ana e o Vítor vão casar</title>
-    <meta name="description" content="é tempo de festa!!!">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="A Ana e o Vítor vão casar.">
-    <meta property="og:description" content="é tempo de festa!!!">
-    <meta property="og:image" content="https://wedding.ramswaroop.me/img/hero-min.jpg">
-    <meta property="og:type" content="website">
-    <link rel="apple-touch-icon" sizes="180x180" href="iniziali.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="iniziali.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="iniziali.png">
-    <link rel="manifest" href="manifest.json">
-    <link rel="mask-icon" href="iniziali.png" color="#5bbad5">
-    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-
-    <script>
-        // load css files from CDN if local node_modules fail
-        function loadCssFromCDN(css) {
-            // create new link tag
-            const link = document.createElement('link');
-            if (css === 'animate.css') {
-                link.href = 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css';
-            } else if (css === 'font-awesome.css') {
-                link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
-            }
-            link.rel = 'stylesheet';
-
-            // add link tag to head section
-            document.getElementsByTagName('head')[0].appendChild(link);
-        }
-
-        
-
-        // load js files from CDN if local node_modules fail
-        function loadJsFromCDN(js) {
-            if (js === 'waypoints.js') {
-                document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"><\/script>');
-            } else if (js === 'jquery.js') {
-                document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"><\/script>');
-            }
-        }
-
-    </script>
-    <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.css">
-    <link rel="stylesheet" href="css/flexslider.css">
-    <link rel="stylesheet" href="css/styles.min.css">
-    <link rel="stylesheet" href="css/queries.css">
-    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" onerror="loadCssFromCDN('animate.css')">
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" onerror="loadCssFromCDN('font-awesome.css')">
-    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-</head>
-<body id="top">
-
-<section class="hero">
-    <section class="navigation">
-        <header>
-            <div class="header-content">
-                <div class="logo"><a href="#"><img src="iniziali.png" alt="Logo"></a></div> <!-- style="width:125%" -->
-                <div class="header-nav">
-                    <nav> 
-                        <ul class="primary-nav">
-                            <li><a href="#invitation">Início</a></li>
-                            <li><a href="#intro">Cerimónia</a></li>
-                            
-                            <li><a href="#party">Festa</a></li>
-
-                            <li><a href="#foto">Informações</a></li>
-                            <li><a href="#rsvp">Confirmações</a></li>
-                            <li><a href="#foto-album">Album</a></li>
-                        </ul>
-<!--                        <ul class="member-actions"> // AM: button with action go-to
-                            <li><a href="#map" class="login">Venue</a></li>
-                            <li><a href="#rsvp" class="btn-white btn-small">RSVP</a></li>
-                        </ul> -->
-                    </nav>
-                </div>
-            </div>
-        </header>
-    </section>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="hero-content">
-                 
-                
-                <div class="cover-photo-box">
-        
-                    <h1 style="display: flex; justify-content: center">Ana &amp; Vítor</h1>
-                    <span style="display: flex; justify-content: center; font-size: x-large">12 Abril 2025</span>
-                  
-                </div>
-            </div>
-            </div>
-        </div>
-
-    </div>
-    <div class="down-arrow floating-arrow"><a href="#invitation"><i class="fa fa-angle-down"></i></a></div>
-</section>
-
-<section id="invitation" class="section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h3>VAMOS CASAR</h3>
-                <p>O dia 12 de Abril de 2025 vai ser o dia do nosso casamento e ficaríamos muito felizes se pudéssemos contar contigo.</p>
-                <p>Chegámos a pensar fazer esta festa durante uma semana, num barco rumo a águas quentes de 27 graus, com cocktails bem fresquinhos para acompanhar.</p>
-                <p>Contudo, como não confiamos a 100% no equilíbrio de alguns dos nossos convidados em alto mar, decidimos que um casamento em Abril, que pode muito bem ser regado com chuva, seria o ideal.</p>
-                <p>Temos garrafas de champagne a aguardar impacientemente o momento de estourarem de forma a brindarmos com todos vocês de quem tanto gostamos.</p>
-                <div class="share-bar"></div>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<section id="intro" class="section-padding grayed">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h3 class="header">Cerimónia Religiosa</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-3 hidden-sm hidden-xs"><img src="img/IMG_7365.jpg" class="wp1"></div>
-            <div class="col-md-6">
-                <p>O nosso casamento vai ter início com a cerimónia religiosa, às <b>14:30</b>, na <b>Basílica de Santa Quitéria de Meca</b>, em Alenquer.</p>
-                <p>Vamos tentar ser pontuais.</p>
-                <p>A basílica de Santa Quitéria de Meca tem um estacionamento na rua da Alameda, pelo gostaríamos que tentasses estacionar aí, deixando o átrio livre para fotografias.</p>
-                <p>Dentro da igreja, podes tirar fotografias mas tenta ter atenção à posição do fotógrafo de forma a não ficares entre o fotógrafo e os noivos.</p>
-                <p>Na saída dos noivos, gostávamos também de te pedir para não utilizares produtos de plástico como confetis ou flores falsas, nem produtos alimentares, como arroz.</p>
-
-            </div>
-            <div class="col-md-3 hidden-sm hidden-xs">
-                <div class="wp9" style="max-width:100%;list-style:none; transition: none;overflow:hidden;height:350px;margin:auto">
-                    <div id="display-google-map" style="height:100%; width:100%;max-width:100%;">
-                        <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=basílica+de+santa+quitéria+de+meca&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
-                    </div>                
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><img src="img/IMG_7365.jpg" class="wp8"></div>
-            <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg">
-                <div class="wp9" style="max-width:100%;list-style:none; transition: none;overflow:hidden;width:760px;height:350px;margin:auto">
-                    <div id="display-google-map" style="height:100%; width:100%;max-width:100%;">
-                        <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=basílica+de+santa+quitéria+de+meca&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
-                    </div>                
-                </div>
-            </div>
-        </div>
-
-            
-        </div>
-
-    </div>
-</section>
-
-<section id="party" class="section-padding">
-
-    <div class="container">
-
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h3 class="header">Jantar e Festa</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-3 hidden-sm hidden-xs">
-
-                <div class="wp1" style="max-width:100%;list-style:none; transition: none;overflow:hidden;width:500px;height:350px;"><div id="embedded-map-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Quinta+Nova+do+Hespanhol&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="embed-ded-maphtml" href="https://www.bootstrapskins.com/themes" id="make-map-data">premium bootstrap themes</a><style>#embedded-map-display img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}</style></div>
-
-            </div>
-            <div class="col-md-6">
-                <p>Após a cerimónia religiosa, convidamos-te a seguir para a <b>Quinta Nova do Hespanhol</b>, na Carvoeira, num trajeto que deverá demorar 20 minutos.</p>               
-                <img style="display: block; margin: auto; width:40%; height:40%" src="img/crono.png" >
-                <p>Não temos hora para o fim da festa, portanto contamos contigo para que dure o mais possível.</p>
-            </div>
-            <div class="col-md-3 hidden-sm hidden-xs">
-                <img src="img/IMG_3239.jpg" class="wp9">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg">
-
-                <div class="wp8" style="max-width:100%;list-style:none; transition: none;overflow:hidden;width:760px;height:350px;"><div id="embedded-map-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/search?q=Quinta+Nova+do+Hespanhol&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="embed-ded-maphtml" href="https://www.bootstrapskins.com/themes" id="make-map-data">premium bootstrap themes</a><style>#embedded-map-display img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}</style></div>
-            </div>
-            <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg">
-                <img src="img/IMG_3239.jpg" class="wp9">
-            </div>
-        </div>
-
-</section>
-
-<section id="info" class="section-padding grayed">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h3>INFORMAÇÕES</h3>
-                
-                
-                <h4>Alojamento</h4>
-                <p>Se quiseres ficar a dormir mais perto da Quinta Nova do Hespanhol, aconselhamos-te a procurar alojamento num AirBnb perto da Carvoeira ou em algum hotel em Torres Vedras porque estamos a planear que o casamento termine tarde.</p>
-                <p>Temos um acordo com o Hotel Dolce Campo Real de te dá 15% de desconto em regime de dormida e pequeno-almoço.</p>
-                <p>Para isso, basta reservares com o nosso link <a href="https://be-p2.synxis.com/?adult=1&arrive=2025-04-10&chain=5136&child=0&currency=EUR&depart=2025-04-15&hotel=81431&level=hotel&locale=pt-PT&productcurrency=EUR&promo=1000086956&rooms=1">Alojamento Casamento Ana & Vitor</a>.</p>                
-                
-              <!--  <h4>Lista de Casamento</h4>
-                <p>Não nos estamos a casar para receber presentes porque temos a sorte de não precisar de nada. O que queremos mesmo é que desfrutes deste dia connosco.</p>
-                <p>Se fizeres questão de nos oferecer alguma coisa, podes ajudar na nossa lua de mel contribuindo por MBWay, Revolut ou Transferência Bancária.</p>
--->
-                <h4>Contactos</h4>
-                <p>Se tiveres alguma dúvida, fala connosco:</p>
-                <p><b>Ana</b> +351 916817518 | <b>Vítor</b> +351 963834063</p>
-       
-            </div>
-        </div>
-
-    </div>
-</section>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Casamento da Ana e do Vitor</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Site de casamento da Ana e do Vítor" />
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
 
 
-<section class="rsvp" id="rsvp">
-    
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h3>Confirmações</h3>
-                <p>Gostávamos muito de poder contar com a tua presença.</p>
-                <p>Caso possas comparecer, por favor adiciona os teus dados no formulário em baixo até 12 de Março.</p>
+	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
 
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
 
-            </div>
-            <div class="col-md-12 ">
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 
-                <form id="confirmationForm" method="post" >
-                    <div class="col-md-12">
-                        <h5>Os teus dados</h5>
-                        <p>Vamos precisar de alguns dados teus para preparar a nossa festa. Não os vamos partilhar com ninguém.</p>
-                    <div class="col-md-12">
-                        <div class="form-group">
-                      <label for="name">Nome</label>
-                      <input type="text" name="Nome" class="form-control" id="name" placeholder="Nome">
-                    </div>
-                    <div class="form-group">
-                      <label for="phone">Telefone</label>
-                      <input type="text" name="Telefone" class="form-control" id="phone" placeholder="Telefone">
-                    </div>
-                    <div class="form-group">
-                        <label for="plusone">Nome do(a) acompanhante</label>
-                        <input type="text" name="Acompanhante" class="form-control" id="plusone" placeholder="Nome do(a) acompanhante">
-                    </div>
-                </div></div>
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
 
-                <div class="col-md-12">
-                    <h5>Crianças</h5>
-                    <p>Caso decidas levar crianças, pedimos-te que insiras os nomes e idades em baixo. Estamos conscientes que há crianças com mais de 20 anos, mas que para nós serão sempre crianças.</p>
-                    
-                        <div class="form-group col-md-6">
-                            <label for="child1">Nome</label>
-                            <input type="text" name="NomeCrianca1" class="form-control" id="child1" placeholder="Nome da 1ª criança">
-                           
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="agechild1">Idade</label>
-                            <input type="number" name="IdadeCrianca1" class="form-control" id="agechild1" placeholder="Idade da 1ª criança">
-                        </div>
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
 
-                        <div class="form-group col-md-6">
-                            <label for="child1">Nome</label>
-                            <input type="text" name="NomeCrianca2" class="form-control" id="child2" placeholder="Nome da 2ª criança">
-                           
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="agechild2">Idade</label>
-                            <input type="number" name="IdadeCrianca2" class="form-control" id="agechild2" placeholder="Idade da 2ª criança">
-                        </div>
+	</head>
+	<body>
+		
+	<div class="fh5co-loader"></div>
+	
+	<div id="page">
+	<nav class="fh5co-nav" role="navigation">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-2">
+				</div>
+				<div class="col-xs-10 text-right menu-1">
+					
+					<ul>
+						<li><a href="#fh5co-couple">Início</a></li>
+						<li><a href="#fh5co-event">Evento</a></li>
+						<li><a href="#fh5co-couple-story">Cronologia</a></li>
 
-                        <div class="form-group col-md-6">
-                            <label for="child3">Nome</label>
-                            <input type="text" name="NomeCrianca3" class="form-control" id="child3" placeholder="Nome da 3ª criança">
-                           
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="agechild3">Idade</label>
-                            <input type="number" name="IdadeCrianca3" class="form-control" id="agechild3" placeholder="Idade da 3ª criança">
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <h5>Outras Informações</h5>
-                        <p>Para que este dia também faça sentido para ti temos algumas questões adicionais, que são opcionais.</p>
-                        <div class="col-md-12">
-                        <div class="form-group">
-                            <label for="alergy">Tens alergias ou intolerâncias alimentares que queiras mencionar?</label>
-                            <input type="text" name="Alergias" class="form-control" id="alergy" placeholder="Alergias e intolerâncias">
-                          </div>
-                          <div class="form-group">
-                            <label for="music">Que músicas é que te vão arrancar da cadeira diretamente para a pista?</label>
-                            <input type="text" name="Musica" class="form-control" id="music" placeholder="Música">
-                          </div>
-                          <div class="form-group">
-                            <label for="comment">Outros comentários</label>
-                            <input type="text" name="Info" class="form-control" id="comment" placeholder="Comentários ou observações">
-                          </div>
-                          </div>
-                    </div>
-                
-                   
-                    <button id="btnSubmit" type="submit" class="btn" style="width: 50%; display: block; margin: auto;">Submeter</button>
-                  </form>
+						<li><a href="#fh5co-services">Informações</a></li>
 
-            </div>
-        </div>
-    </div>
-</section>
-<section id="foto-album" class="section-padding grayed">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h3 class="header">O nosso mini-album</h3>
-            </div>
-        </div>
-        
-	<div class="row" style="text-align: center;">
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="20230504_163322975_iOS.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay"><i class="fa fa-search"></i></div>
-                        <img src="img/20230504_163322975_iOS.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/IMG_0943.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay"><i class="fa fa-search"></i></div>
-                        <img src="img/IMG_0943.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/IMG_5981.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay"><i class="fa fa-search"></i></div>
-                        <img src="img/IMG_5981.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/IMG_3508.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay"><i class="fa fa-search"></i></div>
-                        <img src="img/IMG_3508.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/IMG_5510.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay"><i class="fa fa-search"></i></div>
-                        <img src="img/IMG_5510.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/IMG_5168.jpg">
-                    <div class="img-wrap">
-			<div class="overlay"><i class="fa fa-search"></i></div>
-                        <img src="img/IMG_5168.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-        </div>
-	<br>
-	<br>
-	<div class="row" style="text-align: center;">
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/20230501_155159949_iOS.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay"><i class="fa fa-search"></i></div>
-                        <img src="img/20230501_155159949_iOS.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/IMG_1305.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay"><i class="fa fa-search"></i></div>
-                        <img src="img/IMG_1305.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/IMG_5657.JPG">
-                    <div class="img-wrap">
-                        <div class="overlay"><i class="fa fa-search"></i></div>
-                        <img src="img/IMG_5657.JPG" alt=""/>
-                    </div>
-                </a>
-            </div>
-	    <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/IMG_5045.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay"><i class="fa fa-search"></i></div>
-                        <img src="img/IMG_5045.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/241b8f70-4c8e-4b14-b742-1c1444c753d4.JPG">
-                    <div class="img-wrap">
-                        <div class="overlay"><i class="fa fa-search"></i></div>
-                        <img src="img/241b8f70-4c8e-4b14-b742-1c1444c753d4.JPG" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/16d649ca-31eb-4341-90bb-434fd325ba90.JPG">
-                    <div class="img-wrap">
-                        <div class="overlay"><i class="fa fa-search"></i></div>
-                        <img src="img/16d649ca-31eb-4341-90bb-434fd325ba90.JPG" alt=""/>
-                    </div>
-                </a>
-            </div>
+						<li><a href="#fh5co-testimonial">Pedidos</a></li>
+						<li><a href="#fh5co-started">Confirmações</a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	</nav>
+
+	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/img_bg_2.jpg);" data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<div class="display-t">
+						<div class="display-tc animate-box" data-animate-effect="fadeIn">
+							<h1>Ana &amp; Vítor</h1>
+							<div class="simply-countdown simply-countdown-one"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div id="fh5co-couple">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<h2>Olá!</h2>
+					<h3>Sábado, 12 de Abril de 2025</h3>
+					<p>Temos o prazer de te convidar a celebrares connosco o dia do nosso casamento.</p>
+				</div>
+			</div>
+			<div class="couple-wrap animate-box">
+				<div class="couple-half">
+					<div class="groom">
+						<img src="images/bride.png" alt="bride" class="img-responsive">
+					</div>
+					<div class="desc-groom">
+						<h3>Ana</h3>
+						<p>Nabantina de gema que rumou a sul para estudar. Sócia do Sporting CP e runner de faz de conta nos tempos livres.</p>
+					</div>
+				</div>
+				<p class="heart text-center"><i class="icon-heart2"></i></p>
+				<div class="couple-half">
+					<div class="bride">
+						<img src="images/groom.png" alt="groom" class="img-responsive">
+					</div>
+					<div class="desc-bride">
+						<h3>Vítor</h3>
+						<p>Transmontano de raíz e recentemente alfacinha. Adepto do FC Porto e fã de desportos motorizados.</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
-    </div>
-    <div class="container">
-        <div class="row hidden-lg hidden-md hidden-xs">
-            <div class="col-xs-12 section-border section-padding"></div>
-        </div>
-    </div>
-    <!--<div class="row">
-        <div class="col-md-12">
-            <div class="diamond floating-logo">
-                <img src="img/sketch-logo.png" alt="Sketch Logo">
-                <div class="ring"></div>
-            </div>
-        </div>
-    </div>-->
-</section>
+	<div id="fh5co-event" class="fh5co-section-gray">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					
+					<h2>Evento</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="display-t">
+					<div class="display-tc">
+						<div class="col-md-10 col-md-offset-1">
+							<div class="col-md-6 col-sm-6 text-center">
+								<div class="event-wrap animate-box">
+									<h3>Cerimónia</h3>
+									<div class="event-col">
+										<i class="icon-clock"></i>
+										<span>14:30</span>
+									</div>
+									<div class="event-col">
+										<i class="icon-calendar"></i>
+										<span>Sábado, 12</span>
+										<span>de Abril</span>
+									</div>
+									<p>Basílica de Santa Quitéria de Meca, Alenquer</p>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6 text-center">
+								<div class="event-wrap animate-box">
+									<h3>Festa de Casamento</h3>
+									<div class="event-col">
+										<i class="icon-clock"></i>
+										<span>16:30</span>
+										
+									</div>
+									<div class="event-col">
+										<i class="icon-calendar"></i>
+										<span>Sábado, 12</span>
+										<span>de Abril</span>
+									</div>
+									<p>Quinta Nova do Hespanhol, Carvoeira</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-couple-story">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<h2>Cronologia do dia</h2>
+					<p>Estamos a preparar um dia que esperamos que seja memorável para todos. </p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-md-offset-0">
+					<ul class="timeline animate-box">
+						<li class="animate-box">
+							<div class="timeline-badge" style="background-image:url(images/igreja.jpeg);"></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Cerimónia</h3>
+									<span class="date">15:00</span>
+								</div>
+								<div class="timeline-body">
+
+									<p>O início do casamento será na <b>Basílica de Santa Quitéria de Meca</b>. Estamos a planear a chegada da noiva pelas 15:00 pelo que te pedimos para que chegues mais cedo.
+									
+					
+								</div>
+							</div>
+						</li>
+						<li class="timeline-inverted animate-box">
+							<div class="timeline-badge" style="background-image:url(images/quinta.png);"></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Cocktail e jantar</h3>
+									<span class="date">16:30</span>
+								</div>
+								<div class="timeline-body">
+									<p>
+										Após a cerimónia religiosa, convidamos-te a seguir para a <b>Quinta Nova do Hespanhol</b>, na Carvoeira, num trajeto que deverá demorar cerca de 20 minutos.
+										Aqui, teremos um cocktail com cerca de 2 horas que irá preceder o jantar.
+
+									</p>
+								</div>
+							</div>
+						</li>
+						<li class="animate-box">
+							<div class="timeline-badge" style="background-image:url(images/jukebox.png);"></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Festa</h3>
+									<span class="date">22:00</span>
+								</div>
+								<div class="timeline-body">
+									<p>Quanto todos tiverem terminado a refeição, iremos proceder ao corte do bolo e pedimo-vos a todos que se juntem a nós após inaugurarmos a pista de dança. Não temos hora para terminar e contamos contigo para que seja um festão.</p>
+								</div>
+							</div>
+						</li>
+			    	</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!--	<div id="fh5co-gallery" class="fh5co-section-gray">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<h2>Informações</h2>
+					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+				</div>
+			</div>
+			<div class="row row-bottom-padded-md">
+
+
+				
+				<div class="col-md-12">
+
+					<ul id="fh5co-gallery-list">
+						
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-1.jpg); "> 
+						<a href="images/gallery-1.jpg">
+							<div class="case-studies-summary">
+								<span>14 Photos</span>
+								<h2>Two Glas of Juice</h2>
+							</div>
+						</a>
+					</li>
+					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-2.jpg); ">
+						<a href="#" class="color-2">
+							<div class="case-studies-summary">
+								<span>30 Photos</span>
+								<h2>Timer starts now!</h2>
+							</div>
+						</a>
+					</li>
+
+
+					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-3.jpg); ">
+						<a href="#" class="color-3">
+							<div class="case-studies-summary">
+								<span>90 Photos</span>
+								<h2>Beautiful sunset</h2>
+							</div>
+						</a>
+					</li>
+					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-4.jpg); ">
+						<a href="#" class="color-4">
+							<div class="case-studies-summary">
+								<span>12 Photos</span>
+								<h2>Company's Conference Room</h2>
+							</div>
+						</a>
+					</li>
+
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-5.jpg); ">
+							<a href="#" class="color-3">
+								<div class="case-studies-summary">
+									<span>50 Photos</span>
+									<h2>Useful baskets</h2>
+								</div>
+							</a>
+						</li>
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-6.jpg); ">
+							<a href="#" class="color-4">
+								<div class="case-studies-summary">
+									<span>45 Photos</span>
+									<h2>Skater man in the road</h2>
+								</div>
+							</a>
+						</li>
+
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-7.jpg); ">
+							<a href="#" class="color-4">
+								<div class="case-studies-summary">
+									<span>35 Photos</span>
+									<h2>Two Glas of Juice</h2>
+								</div>
+							</a>
+						</li>
+
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-8.jpg); "> 
+							<a href="#" class="color-5">
+								<div class="case-studies-summary">
+									<span>90 Photos</span>
+									<h2>Timer starts now!</h2>
+								</div>
+							</a>
+						</li>
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-9.jpg); ">
+							<a href="#" class="color-6">
+								<div class="case-studies-summary">
+									<span>56 Photos</span>
+									<h2>Beautiful sunset</h2>
+								</div>
+							</a>
+						</li>
+					</ul>		
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-counter" class="fh5co-bg fh5co-counter" style="background-image:url(images/img_bg_5.jpg);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="display-t">
+					<div class="display-tc">
+						<div class="col-md-3 col-sm-6 animate-box">
+							<div class="feature-center">
+								<span class="icon">
+									<i class="icon-users"></i>
+								</span>
+
+								<span class="counter js-counter" data-from="0" data-to="500" data-speed="5000" data-refresh-interval="50">1</span>
+								<span class="counter-label">Estimated Guest</span>
+
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 animate-box">
+							<div class="feature-center">
+								<span class="icon">
+									<i class="icon-user"></i>
+								</span>
+
+								<span class="counter js-counter" data-from="0" data-to="1000" data-speed="5000" data-refresh-interval="50">1</span>
+								<span class="counter-label">We Catter</span>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 animate-box">
+							<div class="feature-center">
+								<span class="icon">
+									<i class="icon-calendar"></i>
+								</span>
+								<span class="counter js-counter" data-from="0" data-to="402" data-speed="5000" data-refresh-interval="50">1</span>
+								<span class="counter-label">Events Done</span>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 animate-box">
+							<div class="feature-center">
+								<span class="icon">
+									<i class="icon-clock"></i>
+								</span>
+
+								<span class="counter js-counter" data-from="0" data-to="2345" data-speed="5000" data-refresh-interval="50">1</span>
+								<span class="counter-label">Hours Spent</span>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>-->
+
+	
+
+	<div id="fh5co-services" class="fh5co-section-gray">
+		<div class="container">
+			
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Outras Informações</h2>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
+						<span class="icon">
+							<i class="icon-calendar"></i>
+						</span>
+						<div class="feature-copy">
+							<h3>Alojamento</h3>
+							<p>Caso queiras ficar alojado perto da quinta, podes procurar um AirBnb perto da Carvoeira ou um quarto de hotel em Torres Vedras.</p>
+							<p>Temos um acordo com o Hotel Dolce Campo Real de te dá 15% de desconto em regime de dormida e pequeno-almoço.</p>
+							<p>Para isso, basta reservares com o nosso link <a href="https://be-p2.synxis.com/?adult=1&arrive=2025-04-10&chain=5136&child=0&currency=EUR&depart=2025-04-15&hotel=81431&level=hotel&locale=pt-PT&productcurrency=EUR&promo=1000086956&rooms=1">Alojamento Casamento Ana & Vitor</a>.</p>                
+							
+						</div>
+					</div>
+
+					<!--<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
+						<span class="icon">
+							<i class="icon-video"></i>
+						</span>
+						<div class="feature-copy">
+							<h3>Fotografias</h3>
+							<p>Iremos disponibilizar fotografias 3 meses após o dia do nosso casamento.</p>
+						</div>
+					</div> -->
+
+					<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
+						<span class="icon">
+							<i class="icon-image"></i>
+						</span>
+						<div class="feature-copy">
+							<h3>Lista de Casamento</h3>
+							<p>Não temos lista de casamento e o que queremos mesmo é poder contar com a tua presença.</p>
+							<p>Caso faças questão, podes ajudar-nos na lua-de-mel.</p>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-md-6 animate-box">
+					<div class="fh5co-video fh5co-bg" style="background-image: url(images/IMG_NEVE.JPG); ">
+						<!--<a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo"><i class="icon-video2"></i></a>
+						<div class="overlay"></div>-->
+					</div>
+				</div>
+			</div>
+
+			
+		</div>
+	</div>
+	<div id="fh5co-testimonial">
+		<div class="container">
+			<div class="row">
+				<div class="row animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+						<h2>Pedidos</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 animate-box">
+						<div class="wrap-testimony">
+							<div class="owl-carousel-fullwidth">
+								<div class="item">
+									<div class="testimony-slide active text-center">
+										
+										<span>Igreja</span>
+										<blockquote>
+											<p>Vamos ter flores para que possas atirar aos noivos. Não queremos utilizar produtos de plástico nem produtos alimentares. Não os tragas, por favor.</p>
+										</blockquote>
+									</div>
+								</div>
+								<div class="item">
+									<div class="testimony-slide active text-center">
+										
+										<span>Fotografias</span>
+										<blockquote>
+											<p>Incentivamos-te a que tires muitas fotografias durante o dia para que possas partilhar connosco. Porém, evita posicionar-te entre os noivos e os fotógrafos. </p>
+										</blockquote>
+									</div>
+								</div>
+								<div class="item">
+									<div class="testimony-slide active text-center">
+										
+										<span>Estacionamento na igreja</span>
+										<blockquote>
+											<p>Gostávamos que evitasses estacionar no largo da igreja. Existe um estacionamento um pouco mais abaixo, com espaço. Gostávamos muito de um largo da igreja sem carros.</p>
+										</blockquote>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-started" class="fh5co-section-gray">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Podemos contar contigo?</h2>
+					<p>
+						Por favor, preenche o formulário para nos informares se poderás estar presente. Obrigado
+					</p>
+				</div>
+			</div>
+
+			
+					<div class="row">
+						<div class="col-md-6 col-md-push-6 animate-box">
+							<h3>Preenche o formulário</h3>
 
 
 
-<!-- The Modal -->
+
+
+
+							<form id="confirmationForm" method="post" >
+								<div class="row form-group">
+									<div class="col-md-6">
+										<label for="Nome">Nome</label>
+									  	<input type="text" name="Nome" class="form-control" id="Nome" placeholder="Nome">
+									</div>
+									<div class="col-md-6">
+										<label for="Acompanhante">Nome do acompanhante</label>
+										<input type="text" name="Acompanhante" class="form-control" id="Acompanhante" placeholder="Nome do acompanhante">
+									</div>
+								</div>
+								<div class="row form-group">
+									<div class="col-md-12">
+										<label for="Criancas">Crianças (se levares crianças, indica aqui os nomes e idades)</label>
+										<textarea type="text" name="Criancas" cols="30" rows="3" class="form-control" id="Criancas" placeholder="Crianças"></textarea>
+									</div>
+								</div>
+		
+								<div class="row form-group">
+									<div class="col-md-12">
+										<label for="Telefone">Telefone</label>
+									  <input type="text" name="Telefone" class="form-control" id="Telefone" placeholder="Telefone">
+									</div>
+								</div>
+<!--
+								<div class="row form-group">
+									<div class="col-md-6">
+										<label for="child1">Nome</label>
+									  	<input type="text" name="NomeCrianca1" class="form-control" id="child1" placeholder="Nome da 1ª criança">
+									</div>
+									<div class="col-md-6">
+										<label for="agechild1">Nome do(a) acompanhante</label>
+										<input type="number" name="IdadeCrianca1" class="form-control" id="agechild1" placeholder="Idade da 1ª criança">
+									</div>
+								</div>
+								<div class="row form-group">
+									<div class="col-md-6">
+										<label for="child2">Nome</label>
+									  	<input type="text" name="NomeCrianca2" class="form-control" id="child2" placeholder="Nome da 2ª criança">
+									</div>
+									<div class="col-md-6">
+										<label for="agechild2">Nome </label>
+										<input type="number" name="IdadeCrianca2" class="form-control" id="agechild2" placeholder="Idade da 2ª criança">
+									</div>
+								</div>
+								<div class="row form-group">
+									<div class="col-md-6">
+										<label for="child3">Nome</label>
+									  	<input type="text" name="NomeCrianca3" class="form-control" id="child3" placeholder="Nome da 3ª criança">
+									</div>
+									<div class="col-md-6">
+										<label for="agechild3">Nome </label>
+										<input type="number" name="IdadeCrianca3" class="form-control" id="agechild3" placeholder="Idade da 3ª criança">
+									</div>
+								</div>-->
+		
+								<div class="row form-group">
+									<div class="col-md-12">
+										<label for="Alergias">Tens alergias ou intolerâncias?</label>
+										<input type="text" name="Alergias" class="form-control" id="Alergias" class="form-control" placeholder="Alergias e intolerâncias">
+									</div>
+								</div>
+		
+								<div class="row form-group">
+									<div class="col-md-12">
+										<label for="Musica">Que músicas gostarias de ouvir na pista?</label>
+										<input type="text" name="Musica" class="form-control" id="Musica" class="form-control" placeholder="Música">
+									</div>
+								</div>
+		
+
+								<div class="row form-group">
+									<div class="col-md-12">
+										<label for="Comentarios">Comentários </label>
+										<textarea type="text" name="Comentarios" cols="30" rows="3" class="form-control" id="Comentarios" placeholder="Comentários"></textarea>
+									</div>
+								</div>
+								<div class="form-group">
+									<input type="submit" id="btnSubmit" value="Submeter" class="btn btn-primary">
+								</div>
+		
+							</form>		
+						</div>
+						<div class="col-md-5 col-md-pull-5 animate-box">
+							
+							<div class="fh5co-contact-info">
+								<h3>Contactos</h3>
+								<ul>
+									<li class="phone"><a>Ana: +351 916817518</a></li>
+									<li class="phone"><a>Vítor: +351 963834063</a></li>
+									<li class="email"><a href="mailto:valente.ann@gmail.com">valente.ann@gmail.com</a></li>
+									<li class="email"><a href="mailto:vitoraires87@gmail.com">vitoraires87@gmail.com</a></li>
+
+								</ul>
+							</div>
+		
+						</div>
+					
+			</div>
+
+
+
+
+<!--			<div class="row animate-box">
+				<div class="col-md-10 col-md-offset-1">
+					<form class="form-inline">
+						<div class="col-md-4 col-sm-4">
+							<div class="form-group">
+								<label for="name" class="sr-only">Name</label>
+								<input type="name" class="form-control" id="name" placeholder="Name">
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<div class="form-group">
+								<label for="email" class="sr-only">Email</label>
+								<input type="email" class="form-control" id="email" placeholder="Email">
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<button type="submit" class="btn btn-default btn-block">I am Attending</button>
+						</div>
+					</form>
+				</div>
+			</div>-->
+		</div>
+	</div>
+	<!-- The Modal -->
 <div id="myModal" class="modal">
     <div class="container">
     <!-- Modal content -->
     <div class="modal-content">
       <span class="close">&times;</span>
-      <p>Obrigada pela tua confirmação. Recebemos o teu formulário.</p>
+      <p>Obrigada pela tua confirmação.</p>
     </div>
 </div>
   </div>
-  
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 text-center content">
-                <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
-                <p>Feito pelos noivos com <span class="fa fa-heart pulse2"></span></p>
-            </div>
-        </div>
-    </div>
-</footer>
+
+	<footer id="fh5co-footer" role="contentinfo">
+		<div class="container">
+
+			<div class="row copyright">
+				<div class="col-md-12 text-center">
+					<p>Feito pelos noivos com <i style="color: #F14E95;" class="icon-heart2"></i></p>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- countTo -->
+	<script src="js/jquery.countTo.js"></script>
+
+	<!-- Stellar -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+
+	<!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script> -->
+	<script src="js/simplyCountdown.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+
+	<script>
+    var d = new Date(new Date().getTime() + 485 * 120 * 120 * 2000);
+
+    // default example
+    simplyCountdown('.simply-countdown-one', {
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate()
+    });
+
+    //jQuery example
+    $('#simply-countdown-losange').simplyCountdown({
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate(),
+        enableUtc: false
+    });
+</script>
 <script>
     var form = document.getElementById('confirmationForm');
     var scriptURL = "https://script.google.com/macros/s/AKfycbwxw83466Jc4UEleCx3Oe6ZflvJgVd2R4A4lOQsFTDI1syDZnhCDTHVyt7mzSK3VbEWEg/exec";
@@ -513,16 +745,7 @@ var btnSubmit = document.getElementById("btnSubmit");
 
 
 </script>
-<script src="js/vendor/jquery-1.11.2.min.js" onerror="loadJsFromCDN('jquery.js')"></script>
-<script src="node_modules/waypoints/lib/jquery.waypoints.min.js" onerror="loadJsFromCDN('waypoints.js')"></script>
-<script src="js/jquery.fancybox.pack.js"></script>
-<script src="js/vendor/bootstrap.min.js"></script>
-<script src="js/jquery.flexslider-min.js"></script>
-<script src="js/jquery.mb.YTPlayer.min.js"></script>
-<script src="js/vendor/ouical.js"></script>
-<script src="js/scripts.min.js"></script>
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlPw3GQYI3faa_9mRE6plWuM7xNEmrwH0&callback=initMap"></script>
 
-</body>
+	</body>
 </html>
+
