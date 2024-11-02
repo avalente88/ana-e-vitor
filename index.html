@@ -713,7 +713,7 @@
     e.preventDefault();
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
     .then(response =>   AfterFormSubmit())
-    .catch(error => alert("Houve um erro a carregar o teu formulário! Liga-nos, por favor."))
+    .catch(error => AfterError())
     });
 
 	// Get the <span> element that closes the modal

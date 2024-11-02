@@ -239,3 +239,9 @@ function AfterFormSubmit(){
 	$(".fh5co-loader").fadeOut("slow");
 	document.querySelectorAll(".formulario").forEach(x => x.value = '');
 }
+
+function AfterError(){
+    
+	$(".fh5co-loader").fadeOut("slow");
+	alert("Houve um erro a carregar o teu formulário! Liga-nos, por favor.")
+}
