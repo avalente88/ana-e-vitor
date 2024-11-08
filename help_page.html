@@ -59,11 +59,8 @@
 					<ul>
 
 						
-						<li><a href="#fh5co-event">Evento</a></li>
-						<li><a href="#fh5co-couple-story">Cronologia</a></li>
-						<li><a href="#fh5co-services">Informações</a></li>
-						<li><a href="#fh5co-testimonial">Pedidos</a></li>
-						<li><a href="#fh5co-started">Confirmações</a></li>
+						<li><a href="index.html">Página Inicial</a></li>
+						
 					</ul>
 				</div>
 			</div>
@@ -96,37 +93,42 @@
 					<p>A tua presença é mesmo mais importante para nós.</p>
 					<p>Convidámos todos os nossos convidados com carinho e porque gostamos verdadeiramente de todos pelo que ficamos muito felizes de nos podermos divertir contigo neste dia.</p>
 					<p>Caso queiras contribuir para a nossa lua-de-mel, podes-nos efetuar transferência ou via MBWay, transferência bancária ou Revolut:</p>
-					<ul>
-						<li><b>IBAN Ana:</b> PT50 0010 0000 3646 7820 0014 0</li>
-						<li><a href="https://revolut.me/ana16wr">Revolut Ana</a></li>
-						<li><b>IBAN do Vítor:</b></li>
-						<li><a href="https://revolut.me/vitoraires87">Revolut Vítor</a></li>
+					<p>>IBAN Ana:</b> PT50 0010 0000 3646 7820 0014 0</p>
+						<p><a href="https://revolut.me/ana16wr">Revolut Ana</a></p>
+						<p><b>IBAN do Vítor:</b>PT50 0010 0000 3646 7820 0014 0</p>
+						<p><a href="https://revolut.me/vitoraires87">Revolut Vítor</a></p>
 					</ul>
 					<p>Estamos a pensar ir de lua-de-mel ao Peru nos primeiros dias. Depois de explorarmos as paisagens dos Incas, iremos descansar numa das praias das Caraíbas.</p>
-				</div>
-			</div>
-			<div class="couple-wrap animate-box">
-				<div class="couple-half">
-					<div class="groom">
-						<img src="images/bride.png" alt="bride" class="img-responsive">
-					</div>
-					<div class="desc-groom"  style="padding-top: 60px">
-						<h3>Ana</h3>
-					</div>
-				</div>
-				<p class="heart text-center"><i class="icon-heart2"></i></p>
-				<div class="couple-half">
-					<div class="bride">
-						<img src="images/groom.png" alt="groom" class="img-responsive">
-					</div>
-					<div class="desc-bride" style="padding-top: 60px">
-						<h3>Vítor</h3>
-					</div>
+					<p>Clica <a href="index.html">aqui</a> para voltares à página inicial.</p>
 				</div>
 			</div>
 		</div>
 	</div>
+	<div id="fh5co-started" class="fh5co-section-gray">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+						<h2>Contactos</h2>
+						<ul>
+							<li class="phone"><a>Ana: +351 916817518</a></li>
+							<li class="phone"><a>Vítor: +351 963834063</a></li>
+							<li class="email"><a href="mailto:valente.ann@gmail.com">valente.ann@gmail.com</a></li>
+							<li class="email"><a href="mailto:vitoraires87@gmail.com">vitoraires87@gmail.com</a></li>
 
+						</ul>
+					</div>
+		
+				</div>
+					
+			</div>
+		</div>
+	</div>
+
+
+
+	
 	<footer id="fh5co-footer" role="contentinfo">
 		<div class="container">
 
@@ -186,39 +188,7 @@
         enableUtc: false
     });
 </script>
-<script>
-    var form = document.getElementById('confirmationForm');
-    var scriptURL = "https://script.google.com/macros/s/AKfycbwxw83466Jc4UEleCx3Oe6ZflvJgVd2R4A4lOQsFTDI1syDZnhCDTHVyt7mzSK3VbEWEg/exec";
-    var modal = document.getElementById('myModal');
 
-    form.addEventListener('submit', e => {
-	$(".fh5co-loader").fadeIn("slow");
-    e.preventDefault();
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response =>   AfterFormSubmit())
-    .catch(error => AfterError())
-    });
-
-	// Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-	// When the user clicks on <span> (x), close the modal
-	span.onclick = function() {modal.style.display = "none";}
-
-	// When the user clicks anywhere outside of the modal, close it
-	window.onclick = function(event) {
-	if (event.target == modal) {
-		modal.style.display = "none";
-	}
-	}
-
-
-
-
-
-
-
-</script>
 
 	</body>
 </html>
